@@ -33,8 +33,8 @@ document.getElementById('btn-deposit').addEventListener('click', function () {
 })
 
 const displayData = () => {
-  const deposit = JSON.parse(localStorage.getItem('Deposit'));
-  const balanceTotal = JSON.parse(localStorage.getItem('Balance Total'));
+  const deposit = JSON.parse(localStorage.getItem('Deposit'))||00;
+  const balanceTotal = JSON.parse(localStorage.getItem('Balance Total'))||00;
   setTextElementValueById("deposit-total", deposit);
   setTextElementValueById("balance-total", balanceTotal);
 }

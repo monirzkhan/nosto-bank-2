@@ -39,8 +39,8 @@ document.getElementById("btn-withdraw").addEventListener("click", function () {
 });
 
 const displayData2 = () => {
-  const withdraw = JSON.parse(localStorage.getItem('Withdraw'));
-  const balanceTotal = JSON.parse(localStorage.getItem('Balance Total'));
+  const withdraw = JSON.parse(localStorage.getItem('Withdraw'))||00;
+  const balanceTotal = JSON.parse(localStorage.getItem('Balance Total'))||00;
   setTextElementValueById("withdraw-total", withdraw);
   setTextElementValueById("balance-total", balanceTotal);
 }
